@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms'; // Importa FormsModule aquí
+import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
-  standalone: true, // Componente standalone
-  imports: [FormsModule], // Agrega FormsModule aquí
+  standalone: true,
+  imports: [FormsModule],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
@@ -22,7 +22,7 @@ export class LoginComponent {
       this.router.navigate(['/usuarios']);
     } else {
       this.errorMessage = 'Usuario o contraseña incorrectos';
-      alert(this.errorMessage); // Agrega esta línea para mostrar la alerta
+      alert(this.errorMessage);
     }
   }
   
